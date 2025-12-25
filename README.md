@@ -136,7 +136,7 @@ It is intended as a **learning-focused yet professional** frontend project.
 
 ---
 
-## 📄 License
+##  License
 
 This project is open for learning and personal use.
 
