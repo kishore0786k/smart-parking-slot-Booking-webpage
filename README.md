@@ -102,7 +102,7 @@ smart-parking-slot/
 
 ---
 
-## ⚙️ How to Run the Project
+##  How to Run the Project
 
 1. Clone or download the repository  
 2. Open `index.html` directly in a browser  
@@ -112,7 +112,7 @@ The project runs entirely in the browser.
 
 ---
 
-## 📌 Limitations & Future Improvements
+##  Limitations & Future Improvements
 
 Current limitations:
 - No authentication (admin is not role-protected)
@@ -127,7 +127,7 @@ Possible future enhancements:
 
 ---
 
-## 👤 Author Notes
+##  Author Notes
 
 This project was built step-by-step with an emphasis on **honesty and understanding** rather than shortcuts.  
 Every feature included here can be explained and justified during an interview.
