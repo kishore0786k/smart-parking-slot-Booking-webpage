@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Parking Slot Booking</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-logo">Smart Parking</div>
+    <ul class="nav-links">
+        <li><a href="#parking">Parking</a></li>
+        <li><a href="#analytics">Analytics</a></li>
+        <li><a href="#admin">Admin</a></li>
+    </ul>
+</nav>
+
+<!-- HEADER -->
+<header class="app-header">
+    <h1>Smart Parking Slot Booking</h1>
+    <p>Select an available slot and book instantly</p>
+</header>
+
+<!-- PARKING SECTION -->
+<main class="app-container">
+    <section class="legend">
+        <div><span class="legend-box available"></span> Available</div>
+        <div><span class="legend-box booked"></span> Booked</div>
+    </section>
+
+    <section id="parking" class="parking-grid">
+        <!-- Slots render here -->
+    </section>
+</main>
+
+<!-- ANALYTICS -->
+<section id="analytics" class="analytics-panel">
+    <h2>Parking Analytics</h2>
+    <div class="analytics-cards">
+        <div class="analytics-card">
+            <h3>Total Slots</h3>
+            <p id="total-slots">0</p>
+        </div>
+        <div class="analytics-card">
+            <h3>Available</h3>
+            <p id="available-slots">0</p>
+        </div>
+        <div class="analytics-card">
+            <h3>Booked</h3>
+            <p id="booked-slots">0</p>
+        </div>
+    </div>
+</section>
+
+<!-- ADMIN PANEL -->
+<section id="admin" class="admin-panel">
+    <h2>Admin Panel – Manage Bookings</h2>
+    <table class="admin-table">
+        <thead>
+            <tr>
+                <th>Slot</th>
+                <th>Status</th>
+                <th>User</th>
+                <th>Vehicle</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="admin-table-body"></tbody>
+    </table>
+</section>
+
+<!-- ACTIVITY LOG -->
+<section class="activity-panel">
+    <h2>Booking Activity Log</h2>
+    <table class="admin-table">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Slot</th>
+                <th>User</th>
+                <th>Vehicle</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="activity-log"></tbody>
+    </table>
+</section>
+
+<!-- BOOKING MODAL -->
+<div id="booking-form-container" class="modal" style="display:none;">
+    <div class="modal-content">
+        <h2>Book Parking Slot</h2>
+        <form id="booking-form">
+            <label>Slot Number
+                <input type="text" id="slotNumber" readonly>
+            </label>
+            <label>User Name
+                <input type="text" id="userName" required>
+            </label>
+            <label>Vehicle Number
+                <input type="text" id="vehicleNumber" required>
+            </label>
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </div>
+</div>
+
+<div id="confirmation" class="confirmation" style="display:none;"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
